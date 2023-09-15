@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dg0tt6n0fjwt6"
+path="res://.godot/imported/Canopy_Corner.obj-c79c9d2bc47e63e34fa6d23c5d8ffee3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Canopy_Corner.obj-c79c9d2bc47e63e34fa6d23c5d8ffee3.mesh"]
+
+source_file="res://Modular Village/Canopy_Corner.obj"
+dest_files=["res://.godot/imported/Canopy_Corner.obj-c79c9d2bc47e63e34fa6d23c5d8ffee3.mesh", "res://.godot/imported/Canopy_Corner.obj-c79c9d2bc47e63e34fa6d23c5d8ffee3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

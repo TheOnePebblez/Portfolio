@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyg03tp16ki7l"]
+
+[ext_resource type="PackedScene" uid="uid://bdq6ajic6fjrf" path="res://third_person_controller_assets-main/models/mixamo_base.glb" id="1_yepje"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x8owp"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00300351, 0.794267, 0.00160241)
+shape = SubResource("CapsuleShape3D_x8owp")
+
+[node name="Visuals" type="Node3D" parent="."]
+
+[node name="mixamo_base" parent="Visuals" instance=ExtResource("1_yepje")]
+transform = Transform3D(-0.996195, 0, 0.0871558, 0, 1, 0, -0.0871558, 0, -0.996195, -0.000972509, -2.38419e-07, -0.00701213)

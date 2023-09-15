@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8skdxr7vi377"
+path="res://.godot/imported/Stucco_Arch_Half_Outer.obj-63faacca816750badf52cfc3d2ba0aac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stucco_Arch_Half_Outer.obj-63faacca816750badf52cfc3d2ba0aac.mesh"]
+
+source_file="res://Modular Village/Stucco_Arch_Half_Outer.obj"
+dest_files=["res://.godot/imported/Stucco_Arch_Half_Outer.obj-63faacca816750badf52cfc3d2ba0aac.mesh", "res://.godot/imported/Stucco_Arch_Half_Outer.obj-63faacca816750badf52cfc3d2ba0aac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

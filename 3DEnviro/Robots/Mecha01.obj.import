@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpb3vhqws1vtk"
+path="res://.godot/imported/Mecha01.obj-85e1a425b38f8db68f610ba529961851.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Mecha01.obj-85e1a425b38f8db68f610ba529961851.mesh"]
+
+source_file="res://Robots/Mecha01.obj"
+dest_files=["res://.godot/imported/Mecha01.obj-85e1a425b38f8db68f610ba529961851.mesh", "res://.godot/imported/Mecha01.obj-85e1a425b38f8db68f610ba529961851.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

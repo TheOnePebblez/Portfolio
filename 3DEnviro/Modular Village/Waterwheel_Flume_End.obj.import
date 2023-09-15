@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvlvp6f3rdd42"
+path="res://.godot/imported/Waterwheel_Flume_End.obj-bf94de7a6a2904dbb2f41ff51387e3e0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Waterwheel_Flume_End.obj-bf94de7a6a2904dbb2f41ff51387e3e0.mesh"]
+
+source_file="res://Modular Village/Waterwheel_Flume_End.obj"
+dest_files=["res://.godot/imported/Waterwheel_Flume_End.obj-bf94de7a6a2904dbb2f41ff51387e3e0.mesh", "res://.godot/imported/Waterwheel_Flume_End.obj-bf94de7a6a2904dbb2f41ff51387e3e0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

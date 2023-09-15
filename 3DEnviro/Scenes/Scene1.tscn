@@ -1,0 +1,143 @@
+[gd_scene load_steps=23 format=3 uid="uid://brye22qcll7hu"]
+
+[ext_resource type="Texture2D" uid="uid://dko2pc0uq6pwf" path="res://third_person_controller_assets-main/textures/grids/Green/texture_01.png" id="2_ecgru"]
+[ext_resource type="Texture2D" uid="uid://b2hlspn7t1hm" path="res://third_person_controller_assets-main/textures/grids/Orange/texture_12.png" id="3_twtuq"]
+[ext_resource type="Script" path="res://Scenes/CSGBox3D3.gd" id="4_0g5hd"]
+[ext_resource type="Texture2D" uid="uid://dmxmgw3rh0ym2" path="res://third_person_controller_assets-main/textures/grids/Purple/texture_01.png" id="4_0jidp"]
+[ext_resource type="Script" path="res://Scenes/CharacterBody3D.gd" id="5_6kpi6"]
+[ext_resource type="ArrayMesh" uid="uid://bnsfaqbkt521r" path="res://Weapons/Files/USP/USP.obj" id="6_4utjl"]
+[ext_resource type="ArrayMesh" uid="uid://ba8jj2go76ndi" path="res://Robots/FieldFighter.obj" id="7_00nc4"]
+[ext_resource type="Script" path="res://Scenes/Usp.gd" id="7_86uhr"]
+[ext_resource type="ArrayMesh" uid="uid://bpb3vhqws1vtk" path="res://Robots/Mecha01.obj" id="8_4fre3"]
+[ext_resource type="ArrayMesh" uid="uid://c77omkp32boxl" path="res://Robots/QuadrupedTank.obj" id="9_h0jkn"]
+[ext_resource type="Texture2D" uid="uid://vn07b2x8e07l" path="res://third_person_controller_assets-main/textures/grids/Dark/texture_06.png" id="9_hxa2u"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vcxt"]
+albedo_texture = ExtResource("2_ecgru")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1cfdu"]
+albedo_texture = ExtResource("3_twtuq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k2gpu"]
+albedo_texture = ExtResource("4_0jidp")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4vqqp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4f272"]
+size = Vector3(5.56188, 4, 3)
+
+[sub_resource type="Skin" id="Skin_lohbc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_envsf"]
+size = Vector3(99.7595, 1, 100.776)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tw48v"]
+albedo_texture = ExtResource("9_hxa2u")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_47khe"]
+size = Vector2(100, 100)
+
+[sub_resource type="Sky" id="Sky_sonw5"]
+
+[sub_resource type="Environment" id="Environment_dcp76"]
+background_mode = 1
+background_color = Color(0.192157, 0.505882, 0.552941, 1)
+background_energy_multiplier = 1.89
+sky = SubResource("Sky_sonw5")
+ambient_light_color = Color(0.541176, 0.843137, 0.835294, 1)
+ambient_light_energy = 1.31
+reflected_light_source = 2
+ssr_enabled = true
+ssao_enabled = true
+fog_light_energy = 1.3
+fog_density = 0.0
+fog_sky_affect = 0.338
+volumetric_fog_density = 0.0
+
+[node name="World" type="Node3D"]
+
+[node name="Ground" type="Node3D" parent="."]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Ground"]
+transform = Transform3D(0.643001, 0, 0.765865, 0, 1, 0, -0.765865, 0, 0.643001, -4.9262, 2.21809, 1.18313)
+material_override = SubResource("StandardMaterial3D_5vcxt")
+use_collision = true
+size = Vector3(10, 0.496, 10)
+
+[node name="BOX" type="CSGBox3D" parent="Ground"]
+transform = Transform3D(0.643001, 0, 0.765865, -0.145766, -0.98172, 0.122382, 0.751865, -0.190329, -0.631248, 2.31073, 0.530056, 0)
+material_override = SubResource("StandardMaterial3D_1cfdu")
+use_collision = true
+size = Vector3(1, 0.915858, 1)
+script = ExtResource("4_0g5hd")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Ground"]
+transform = Transform3D(0.643001, 0, 0.765865, 0, 1, 0, -0.765865, 0, 0.643001, -3.65267, 1.06718, 9.03599)
+material_override = SubResource("StandardMaterial3D_k2gpu")
+use_collision = true
+size = Vector3(2, 2, 2)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Ground"]
+transform = Transform3D(0.61189, -0.30729, 0.728809, 0.197588, 0.951616, 0.235343, -0.765865, -2.37485e-08, 0.643001, 3.72842, 3.95654, 7.71266)
+material_override = SubResource("StandardMaterial3D_5vcxt")
+use_collision = true
+size = Vector3(1, 1, 10)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Ground"]
+transform = Transform3D(0.643001, 0, 0.765865, 0, 1, 0, -0.765865, 0, 0.643001, -14.2307, 11.7023, 5.48442)
+material_override = SubResource("StandardMaterial3D_5vcxt")
+use_collision = true
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(0.654741, 0, -0.755853, 0, 1, 0, 0.755853, 0, 0.654741, -23.941, 1.3, 6.41)
+script = ExtResource("5_6kpi6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0282279, 0)
+shape = SubResource("CapsuleShape3D_4vqqp")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00858527, 0.483728, 0)
+
+[node name="Usp" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(-0.00207325, 0, 0.0999785, 0, 0.1, 0, -0.0999785, 0, -0.00207325, 0.165869, 0.254115, -0.306576)
+mesh = ExtResource("6_4utjl")
+skeleton = NodePath("../..")
+script = ExtResource("7_86uhr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.953224, -0.0479558, -0.298437, -0.287892, -0.156805, 0.944738, -0.092102, 0.986465, 0.135664, -2.32388, 18.3116, 0.0400791)
+light_energy = 2.025
+
+[node name="FieldFighter" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -23)
+mesh = ExtResource("7_00nc4")
+
+[node name="Mecha01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -17)
+mesh = ExtResource("8_4fre3")
+
+[node name="Whomstve" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4.52868, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Whomstve"]
+shape = SubResource("BoxShape3D_4f272")
+
+[node name="QuadrupedTank" type="MeshInstance3D" parent="Whomstve"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.52868, 0)
+mesh = ExtResource("9_h0jkn")
+skin = SubResource("Skin_lohbc")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0229645, 0, -0.0587349)
+shape = SubResource("BoxShape3D_envsf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+material_override = SubResource("StandardMaterial3D_tw48v")
+mesh = SubResource("PlaneMesh_47khe")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dcp76")

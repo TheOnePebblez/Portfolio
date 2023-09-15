@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://uuuifsbnopfo"
+path="res://.godot/imported/Prop_Boat_1.obj-d4c99ee3036ae408c51bf0a52c33a7a8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Boat_1.obj-d4c99ee3036ae408c51bf0a52c33a7a8.mesh"]
+
+source_file="res://Modular Village/Prop_Boat_1.obj"
+dest_files=["res://.godot/imported/Prop_Boat_1.obj-d4c99ee3036ae408c51bf0a52c33a7a8.mesh", "res://.godot/imported/Prop_Boat_1.obj-d4c99ee3036ae408c51bf0a52c33a7a8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

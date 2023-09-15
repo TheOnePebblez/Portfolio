@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dos7hyudoq75s"
+path="res://.godot/imported/Prop_Crate_1_Open.obj-094cbcb9c0659bed2afe42efd03db86e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Crate_1_Open.obj-094cbcb9c0659bed2afe42efd03db86e.mesh"]
+
+source_file="res://Modular Village/Prop_Crate_1_Open.obj"
+dest_files=["res://.godot/imported/Prop_Crate_1_Open.obj-094cbcb9c0659bed2afe42efd03db86e.mesh", "res://.godot/imported/Prop_Crate_1_Open.obj-094cbcb9c0659bed2afe42efd03db86e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

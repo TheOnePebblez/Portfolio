@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ci5p4otylw5uv"
+path="res://.godot/imported/Stone_Wall_1.obj-b9cb0160abb025e6f1eebf6a571d5648.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stone_Wall_1.obj-b9cb0160abb025e6f1eebf6a571d5648.mesh"]
+
+source_file="res://Modular Village/Stone_Wall_1.obj"
+dest_files=["res://.godot/imported/Stone_Wall_1.obj-b9cb0160abb025e6f1eebf6a571d5648.mesh", "res://.godot/imported/Stone_Wall_1.obj-b9cb0160abb025e6f1eebf6a571d5648.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

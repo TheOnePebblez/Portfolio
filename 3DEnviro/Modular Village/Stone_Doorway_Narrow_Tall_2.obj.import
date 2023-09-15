@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3invvk0oub4p"
+path="res://.godot/imported/Stone_Doorway_Narrow_Tall_2.obj-80d14c5543f62cbc7c51f8bc6682a895.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stone_Doorway_Narrow_Tall_2.obj-80d14c5543f62cbc7c51f8bc6682a895.mesh"]
+
+source_file="res://Modular Village/Stone_Doorway_Narrow_Tall_2.obj"
+dest_files=["res://.godot/imported/Stone_Doorway_Narrow_Tall_2.obj-80d14c5543f62cbc7c51f8bc6682a895.mesh", "res://.godot/imported/Stone_Doorway_Narrow_Tall_2.obj-80d14c5543f62cbc7c51f8bc6682a895.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

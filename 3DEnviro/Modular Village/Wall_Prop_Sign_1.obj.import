@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cc5wccybx4nbs"
+path="res://.godot/imported/Wall_Prop_Sign_1.obj-c344b16b1f70b2e9361fac5bd9696705.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wall_Prop_Sign_1.obj-c344b16b1f70b2e9361fac5bd9696705.mesh"]
+
+source_file="res://Modular Village/Wall_Prop_Sign_1.obj"
+dest_files=["res://.godot/imported/Wall_Prop_Sign_1.obj-c344b16b1f70b2e9361fac5bd9696705.mesh", "res://.godot/imported/Wall_Prop_Sign_1.obj-c344b16b1f70b2e9361fac5bd9696705.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
