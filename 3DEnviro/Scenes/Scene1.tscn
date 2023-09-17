@@ -37,14 +37,13 @@ albedo_texture = ExtResource("9_hxa2u")
 [sub_resource type="PlaneMesh" id="PlaneMesh_47khe"]
 size = Vector2(100, 100)
 
-[sub_resource type="Sky" id="Sky_sonw5"]
+[sub_resource type="Sky" id="Sky_dca3e"]
 
 [sub_resource type="Environment" id="Environment_dcp76"]
-background_mode = 1
 background_color = Color(0.192157, 0.505882, 0.552941, 1)
 background_energy_multiplier = 1.89
-sky = SubResource("Sky_sonw5")
-ambient_light_color = Color(0.541176, 0.843137, 0.835294, 1)
+sky = SubResource("Sky_dca3e")
+ambient_light_source = 2
 ambient_light_energy = 1.31
 reflected_light_source = 2
 ssr_enabled = true
@@ -99,10 +98,10 @@ shape = SubResource("CapsuleShape3D_4vqqp")
 [node name="Camera3D" type="Camera3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00858527, 0.483728, 0)
 
-[node name="Usp" type="MeshInstance3D" parent="Player"]
-transform = Transform3D(-0.00207325, 0, 0.0999785, 0, 0.1, 0, -0.0999785, 0, -0.00207325, 0.165869, 0.254115, -0.306576)
+[node name="Usp" type="MeshInstance3D" parent="Player/Camera3D"]
+transform = Transform3D(-0.00207325, 0, 0.0999785, 0, 0.1, 0, -0.0999785, 0, -0.00207325, 0.117603, -0.232061, -0.189013)
 mesh = ExtResource("6_4utjl")
-skeleton = NodePath("../..")
+skeleton = NodePath("../../..")
 script = ExtResource("7_86uhr")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
